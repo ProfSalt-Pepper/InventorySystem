@@ -16,7 +16,7 @@ public class logIn extends javax.swing.JFrame {
      */
     public logIn() {
         initComponents();
-        setLocation(null);
+        setLocationRelativeTo(null);
     }
 
 
@@ -145,7 +145,10 @@ public class logIn extends javax.swing.JFrame {
     }//GEN-LAST:event_tfPassActionPerformed
 
     private void bExActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bExActionPerformed
-      double a = JOptionPane.showConfirmDialog(null, "Do you want to close application?","Select",JOptionPane.YES_NO_OPTION);  //JOPTION PAN YES AND NO AT EXIT
+      int a = JOptionPane.showConfirmDialog(null, "Do you want to close application?","Select",JOptionPane.YES_NO_OPTION); 
+      if(a==0){
+      System.exit(0);
+      }//JOPTION PAN YES AND NO AT EXIT
     }//GEN-LAST:event_bExActionPerformed
 
     /**
